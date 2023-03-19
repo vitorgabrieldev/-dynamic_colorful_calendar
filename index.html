@@ -19,7 +19,7 @@
             <h1 class="title__calendar">Calendário</h1>
         </header>
         <div class="container__calendar">
-            <table border="1" class="element__Calendar">
+            <table class="element__Calendar">
                 <tr class="elementCalendarContainer__title">
                     <td class="elementCalendarItem__title">Domingo</td>
                     <td class="elementCalendarItem__title">Segunda</td>
@@ -44,7 +44,7 @@
                     <td class="dayNumber">8</td>
                     <td class="dayNumber">9</td>
                     <td class="dayNumber">10</td>
-                    <td class="dayNumber">1</td>
+                    <td class="dayNumber">11</td>
                     <td class="dayNumber">12</td>
                 </tr>
                 <tr class="daysnumber__container">
@@ -71,10 +71,16 @@
                     <td class="dayNumber">29</td>
                     <td class="dayNumber">30</td>
                     <td class="dayNumber">31</td>
-                    <td class="dayNumber">25</td>
-                    <td class="dayNumber">26</td>
+                    <td class="dayNumber"></td>
+                    <td class="dayNumber"></td>
                 </tr>
             </table>
+        </div>
+        <div class="container__colorOption">
+            <label for="colorSeletor" class="titleSeletor">Selecione uma cor:</label>
+            <input type="range" id="colorSeletor" min="1" max="5" value="0">
+            <div class="colorSelect"></div>
+            <button type="button" id="drawDay">Draw</button>
         </div>
     </section>
 

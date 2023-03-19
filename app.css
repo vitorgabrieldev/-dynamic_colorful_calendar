@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d1c1c;
+}
+* {
+    color: #fefefe;
+    font-family: 'K2D', sans-serif;
+}
+.container__main {
+    background: #5857571b;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.container__header {
+    display: flex;
+    justify-content: center;
+}
+.title__calendar {
+    font-size: 2rem;
+}
+.container__calendar {
+    background: #58575734;
+    padding: .3rem;
+    border-radius: 8px;
+}
+.element__Calendar, tr, td {
+    border: 1px solid #fefefe;
+    border-collapse: collapse;
+    text-align: center;
+}
+.elementCalendarItem__title {
+    padding: .5rem 1rem .5rem 1rem;
+    background: rgba(123, 123, 123, 0.275);
+}
+.dayNumber {
+    padding: 1.2rem 1.2rem;
+    font-size: 1.6rem;
+}
+.dayNumber:hover {
+    cursor: pointer;
+    transition: .3s;
+    background: rgba(123, 123, 123, 0.474);
+}
+.container__colorOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+.titleSeletor {
+    font-size: 1.5rem;
+}
+.colorSelect {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fefefe;
+}
+#colorSeletor {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(54, 53, 53);
+    border-radius: 12px;
+    padding: .3rem .3rem .3rem .3rem;
+    cursor: pointer;
+    transition: .33s;
+    outline: none;
+}
+#colorSeletor:hover {
+    transform: scale(1.1);
+}
+#drawDay {
+    background: transparent;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    padding: .5rem;
+    border: 1px solid #fefefe;
+    cursor: pointer;
+    transition: .33s;
+}
+#drawDay:hover {
+    background: #383737;
+}
