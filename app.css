@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@ body, html {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1d1c1c;
+    background: #1c1c1d;
 }
 * {
     color: #fefefe;
@@ -30,10 +31,14 @@ body, html {
     padding: .3rem;
     border-radius: 8px;
 }
-.element__Calendar, tr, td {
+.element__Calendar, tr, td, .elementCalendarItem__title {
     border: 1px solid #fefefe;
     border-collapse: collapse;
     text-align: center;
+}
+td {
+    width: 4rem;
+    height: 2rem;
 }
 .elementCalendarItem__title {
     padding: .5rem 1rem .5rem 1rem;
@@ -87,4 +92,54 @@ body, html {
 }
 #drawDay:hover {
     background: #383737;
+}
+.destaque {
+    background: rgb(53, 52, 52);
+}
+.destaque2 {
+    background: rgb(95, 94, 94);
+}
+label {
+    font-size: 2rem;
+}
+#color {
+    color: #000;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 24px;
+    padding: .3rem 2rem .3rem 1rem;
+    margin-left: .5rem;
+    -webkit-appearance: ;
+}
+#color > option {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.container__colorOption {
+    display: block;
+    text-align: center;
+}
+#btn {
+    color: #fefefe;
+    background: transparent;
+    border: 1px solid #fefefe;
+    font-size: 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .33s;
+}
+#btn:hover {
+    background: rgba(74, 74, 74, 0.444);
+}
+#day {
+    transition: .33s;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgreen;
+    padding: .3rem 2rem .3rem 2rem;
+    font-size: 2rem;
+    width: 20rem;
 }
